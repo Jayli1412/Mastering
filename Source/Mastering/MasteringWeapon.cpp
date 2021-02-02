@@ -10,12 +10,16 @@
 // Sets default values
 AMasteringWeapon::AMasteringWeapon()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+ 	// Create GunMesh Component
 	WeaponMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WeaponMesh"));
 	WeaponMesh->SetOnlyOwnerSee(true);
 	WeaponMesh->bCastDynamicShadow = false;
 	WeaponMesh->CastShadow = false;
 	WeaponMesh->SetupAttachment(RootComponent);
+
+	// Set MuzzleLoaction Class
+	MuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("MuzzleLocation"));
+	MuzzleLocation->SetupAttachment(WeaponMesh);
 }
 
 // Called when the game starts or when spawned

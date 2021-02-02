@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Mastering.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{256FC57A-F568-4565-8D8B-47DBECB8264B}</UniqueIdentifier>
+      <UniqueIdentifier>{78934DAB-E94B-4213-A574-DE290501410A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Mastering.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\MasteringEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{DB198E6A-FE7A-4ECE-A4C9-E98953C8CE42}</UniqueIdentifier>
+      <UniqueIdentifier>{2D12B7FD-E767-4136-B0A6-D2AD00DA7678}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Mastering">
-      <UniqueIdentifier>{24CF6616-8EB5-4530-84A8-29287F0FBDA8}</UniqueIdentifier>
+      <UniqueIdentifier>{94BE8CAB-04F5-44DF-9540-39A4F82D6A73}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Mastering\Mastering.Build.cs">
       <Filter>Source\Mastering</Filter>
@@ -57,6 +59,12 @@
       <Filter>Source\Mastering</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Mastering\MasteringHUD.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\MasteringInventory.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\MasteringInventory.h">
       <Filter>Source\Mastering</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Mastering\MasteringProjectile.cpp">

@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeMasteringWeapon() {}
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 // End Cross Module References
 	void AMasteringWeapon::StaticRegisterNativesAMasteringWeapon()
 	{
@@ -57,6 +58,10 @@ void EmptyLinkFunctionForGeneratedCodeMasteringWeapon() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MuzzleLocation_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MuzzleLocation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WeaponMesh;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -117,12 +122,23 @@ void EmptyLinkFunctionForGeneratedCodeMasteringWeapon() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_MuzzleLocation = { "MuzzleLocation", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMasteringWeapon, MuzzleLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_MuzzleLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_MuzzleLocation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_WeaponMesh_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "Comment", "/** Our weapon skeletal mesh */" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "MasteringWeapon.h" },
+		{ "ToolTip", "Our weapon skeletal mesh" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_WeaponMesh = { "WeaponMesh", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMasteringWeapon, WeaponMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_WeaponMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_WeaponMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMasteringWeapon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_GunOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_FireSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_FireAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_MuzzleLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringWeapon_Statics::NewProp_WeaponMesh,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMasteringWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMasteringWeapon>::IsAbstract,
@@ -151,7 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeMasteringWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMasteringWeapon, 4283417463);
+	IMPLEMENT_CLASS(AMasteringWeapon, 3201655788);
 	template<> MASTERING_API UClass* StaticClass<AMasteringWeapon>()
 	{
 		return AMasteringWeapon::StaticClass();

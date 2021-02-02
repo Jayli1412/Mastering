@@ -35,8 +35,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Projectiles)
 	class USceneComponent* MuzzleLocation;
 
+	/** Our weapon skeletal mesh */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+		class USkeletalMeshComponent* WeaponMesh;
+
 protected:
-	AMasteringWeapon();
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 

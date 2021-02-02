@@ -7,8 +7,6 @@ F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSou
 F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 J:\UE4_Projects\Mastering\Intermediate\Build\Win64\UE4Editor\Inc\Mastering\MasteringCharacter.generated.h
-J:\UE4_Projects\Mastering\Source\Mastering\MasteringProjectile.h
-J:\UE4_Projects\Mastering\Intermediate\Build\Win64\UE4Editor\Inc\Mastering\MasteringProjectile.generated.h
 F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
