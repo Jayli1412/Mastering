@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Mastering",
+			"Path": "J:\\UE4_Projects\\Mastering\\Source\\Mastering.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MasteringEditor",
+			"Path": "J:\\UE4_Projects\\Mastering\\Source\\MasteringEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

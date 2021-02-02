@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"J:\\UE4_Projects\\Mastering\\Source\\Mastering\\Mastering.Build.cs",
+		"J:\\UE4_Projects\\Mastering\\Source\\Mastering.Target.cs",
+		"J:\\UE4_Projects\\Mastering\\Source\\MasteringEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.0"
+}

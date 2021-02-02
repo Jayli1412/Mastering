@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Mastering.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{256FC57A-F568-4565-8D8B-47DBECB8264B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Mastering.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\MasteringEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{DB198E6A-FE7A-4ECE-A4C9-E98953C8CE42}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Mastering">
+      <UniqueIdentifier>{24CF6616-8EB5-4530-84A8-29287F0FBDA8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Mastering\Mastering.Build.cs">
+      <Filter>Source\Mastering</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Mastering\Mastering.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\Mastering.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\MasteringCharacter.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\MasteringCharacter.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\MasteringGameMode.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\MasteringGameMode.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\MasteringHUD.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\MasteringHUD.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\MasteringProjectile.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\MasteringProjectile.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\MasteringWeapon.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\MasteringWeapon.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\StealthCharacter.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\StealthCharacter.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

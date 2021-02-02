@@ -1,0 +1,17 @@
+J:\UE4_Projects\Mastering\Intermediate\Build\Win64\UE4Editor\Development\Mastering\Definitions.Mastering.h
+J:\UE4_Projects\Mastering\Source\Mastering\MasteringHUD.h
+F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+J:\UE4_Projects\Mastering\Intermediate\Build\Win64\UE4Editor\Inc\Mastering\MasteringHUD.generated.h
+F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/Canvas.h
+F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Public\CanvasItem.h
+F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/Font.h
+F:\Game\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/FontImportOptions.h
+F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\FontImportOptions.generated.h
+F:\Game\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Fonts/FontProviderInterface.h
+F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\SlateCore\FontProviderInterface.generated.h
+F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Font.generated.h
+F:\Game\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Canvas.generated.h
