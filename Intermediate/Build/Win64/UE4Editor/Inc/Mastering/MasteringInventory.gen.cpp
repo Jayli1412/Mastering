@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeMasteringInventory() {}
 	MASTERING_API UClass* Z_Construct_UClass_UMasteringInventory();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_Mastering();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	MASTERING_API UClass* Z_Construct_UClass_AMasteringWeapon_NoRegister();
 // End Cross Module References
 	void UMasteringInventory::StaticRegisterNativesUMasteringInventory()
 	{
@@ -31,6 +33,11 @@ void EmptyLinkFunctionForGeneratedCodeMasteringInventory() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DefaultWeapon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DefaultWeapon;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +53,16 @@ void EmptyLinkFunctionForGeneratedCodeMasteringInventory() {}
 		{ "ModuleRelativePath", "MasteringInventory.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMasteringInventory_Statics::NewProp_DefaultWeapon_MetaData[] = {
+		{ "Category", "MasteringInventory" },
+		{ "ModuleRelativePath", "MasteringInventory.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UMasteringInventory_Statics::NewProp_DefaultWeapon = { "DefaultWeapon", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMasteringInventory, DefaultWeapon), Z_Construct_UClass_AMasteringWeapon_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UMasteringInventory_Statics::NewProp_DefaultWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMasteringInventory_Statics::NewProp_DefaultWeapon_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMasteringInventory_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMasteringInventory_Statics::NewProp_DefaultWeapon,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMasteringInventory_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMasteringInventory>::IsAbstract,
 	};
@@ -55,11 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeMasteringInventory() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_UMasteringInventory_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UMasteringInventory_Statics::PropPointers),
 		0,
 		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UMasteringInventory_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMasteringInventory_Statics::Class_MetaDataParams))
@@ -73,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeMasteringInventory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMasteringInventory, 814101784);
+	IMPLEMENT_CLASS(UMasteringInventory, 1756546805);
 	template<> MASTERING_API UClass* StaticClass<UMasteringInventory>()
 	{
 		return UMasteringInventory::StaticClass();

@@ -1,3 +1,0 @@
-J:\UE4_Projects\Mastering\Intermediate\Build\Win64\UE4Editor\DebugGame\Mastering\Definitions.Mastering.h
-J:\UE4_Projects\Mastering\Source\Mastering\MasteringInventory.h
-J:\UE4_Projects\Mastering\Intermediate\Build\Win64\UE4Editor\Inc\Mastering\MasteringInventory.generated.h

@@ -1,5 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+#pragma once
 
 #include "MasteringWeapon.h"
 #include "MasteringProjectile.h"
@@ -36,3 +36,34 @@ void AMasteringWeapon::Tick(float DeltaTime)
 
 }
 
+void AMasteringWeapon::Fire(FRotator ControlRotation, class UAnimInstance* AnimInst)
+{
+	//Check Projectile
+	if (ProjectileClass != nullptr)
+	{
+		UWorld* const World = GetWorld();
+		if (World != nullptr)
+		{
+			const FVector SpawnLocation = ((MuzzleLocation != nullptr) ? MuzzleLocation->GetComponentLocation() : GetActorLocation()) + ControlRotation.RotateVector(GunOffset);
+
+			FActorSpawnParameters ActorSpawnParams;
+			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+			World->SpawnActor<AMasteringProjectile>(ProjectileClass, SpawnLocation, ControlRotation, ActorSpawnParams);
+		}
+	}
+	// If set, play sound
+	if (FireSound != nullptr)
+	{
+		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+	}
+	// If set, Play fire animation
+	if (FireAnimation != nullptr)
+	{
+		// Load animation object of arm mesh
+		if (AnimInst != nullptr)
+		{
+			AnimInst->Montage_Play(FireAnimation, 1.f);
+		}
+	}
+}

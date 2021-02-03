@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Mastering.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{78934DAB-E94B-4213-A574-DE290501410A}</UniqueIdentifier>
+      <UniqueIdentifier>{7C18A7A8-B10B-448F-896F-F28791C4F996}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Mastering.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{2D12B7FD-E767-4136-B0A6-D2AD00DA7678}</UniqueIdentifier>
+      <UniqueIdentifier>{F4C84887-C2AB-49DC-A2A9-A7506A478364}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Mastering">
-      <UniqueIdentifier>{94BE8CAB-04F5-44DF-9540-39A4F82D6A73}</UniqueIdentifier>
+      <UniqueIdentifier>{63CB5F7B-E25F-4954-9940-97E9E64472A5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Mastering\Mastering.Build.cs">
       <Filter>Source\Mastering</Filter>
@@ -77,6 +77,12 @@
       <Filter>Source\Mastering</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Mastering\MasteringWeapon.h">
+      <Filter>Source\Mastering</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Mastering\MasteringWeaponPickup.cpp">
+      <Filter>Source\Mastering</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Mastering\MasteringWeaponPickup.h">
       <Filter>Source\Mastering</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Mastering\StealthCharacter.cpp">
