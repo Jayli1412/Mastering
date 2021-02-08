@@ -6,6 +6,22 @@
 #include "Components/ActorComponent.h"
 #include "MasteringInventory.generated.h"
 
+UStruct()
+struct FWeaponProperties
+{
+	GENERATED_USTRUCT_BODY()
+
+public:
+
+	UPROPERTY()
+	TSubclassOf<class AMasteringWeapon> WeaponClass;
+
+	UPROPERTY()
+	int WeaponPower;
+
+	UPROPERTY()
+	int Ammo;
+};
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class MASTERING_API UMasteringInventory : public UActorComponent

@@ -2,6 +2,8 @@
 
 
 #include "MasteringWeaponPickup.h"
+#include "MasteringCharacter.h"
+#include "MasteringInventory.h"
 
 // Sets default values
 AMasteringWeaponPickup::AMasteringWeaponPickup()
@@ -18,10 +20,27 @@ void AMasteringWeaponPickup::BeginPlay()
 	
 }
 
+void AMasteringWeaponPickup::NotifyActorBeginOverlap(AActor* OtherActor)
+{
+	AMasteringCharacter* Player = Cast<AMasteringCharacter>(OtherActor);
+	if (Player == nullptr)
+	{
+		return;
+	}
+
+	UMasteringInventory* Inventory = Player->GetInventory();
+	Inventory->AddWeapon(WeaponClass, Ammunition, WeaponPower);
+
+	Inventory->SelectBestWeapon();
+
+	Destroy();
+}
+
 // Called every frame
 void AMasteringWeaponPickup::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	FRotator rotationAmount(0.0f, DeltaTime * RotationSpeed, 0.0f);
+	AddActorLocalRotation(rotationAmount);
 }
 
