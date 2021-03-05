@@ -22,13 +22,13 @@ void AMasteringWeaponPickup::BeginPlay()
 
 void AMasteringWeaponPickup::NotifyActorBeginOverlap(AActor* OtherActor)
 {
-	AMasteringCharacter* Player = Cast<AMasteringCharacter>(OtherActor);
-	if (Player == nullptr)
+	AMasteringCharacter *player = Cast<AMasteringCharacter>(OtherActor);
+	if (player == nullptr)
 	{
 		return;
 	}
 
-	UMasteringInventory* Inventory = Player->GetInventory();
+	UMasteringInventory *Inventory = player->GetInventory();
 	Inventory->AddWeapon(WeaponClass, Ammunition, WeaponPower);
 
 	Inventory->SelectBestWeapon();

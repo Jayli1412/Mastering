@@ -55,7 +55,7 @@ void AMasteringCharacter::BeginPlay()
 	//Equip best weapon when game starts
 	if (Inventory != nullptr)
 	{
-		Inventory->SelectBestWeapon(this);
+		Inventory->SelectBestWeapon();
 	}
 }
 
@@ -74,6 +74,9 @@ void AMasteringCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	// Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMasteringCharacter::OnFire);
 
+	//인벤토리 순환
+	PlayerInputComponent->BindAction("InventoryUp", IE_Pressed, this, &AMasteringCharacter::SelectNextWeapon);
+	PlayerInputComponent->BindAction("InventoryDown", IE_Pressed, this, &AMasteringCharacter::SelectPreviousWeapon);
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
 
@@ -96,7 +99,7 @@ void AMasteringCharacter::OnFire()
 	if (GetEquippedWeapon() != nullptr)
 	{
 		UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
-		GetEquippedWeapon()->Fire(GetControlRotation(), AnimInstance);
+		GetEquippedWeapon()->Fire(GetControlRotation(), AnimInstance, Inventory);
 	}
 }
 
@@ -216,6 +219,9 @@ void AMasteringCharacter::EquipWeapon(TSubclassOf<class AMasteringWeapon> Weapon
 
 	if (EquippedWeaponActor != nullptr)
 	{
+		if (EquippedWeaponActor->IsA(Weapon))
+			return;
+
 		World->DestroyActor(EquippedWeaponActor);
 	}
 
@@ -231,4 +237,14 @@ void AMasteringCharacter::EquipWeapon(TSubclassOf<class AMasteringWeapon> Weapon
 		//Attach mesh component to SK_Mesh
 		EquippedWeaponActor->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 	}
+}
+
+void AMasteringCharacter::SelectNextWeapon()
+{
+	Inventory->SelectNextWeapon();
+}
+
+void AMasteringCharacter::SelectPreviousWeapon()
+{
+	Inventory->SelectPreviousWeapon();
 }

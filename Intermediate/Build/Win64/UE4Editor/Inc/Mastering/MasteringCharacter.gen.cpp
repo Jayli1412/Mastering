@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeMasteringCharacter() {}
 		{ "ModuleRelativePath", "MasteringCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_Inventory = { "Inventory", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMasteringCharacter, Inventory), Z_Construct_UClass_UMasteringInventory_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_Inventory_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_Inventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_Inventory = { "Inventory", nullptr, (EPropertyFlags)0x002008000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMasteringCharacter, Inventory), Z_Construct_UClass_UMasteringInventory_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_Inventory_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_Inventory_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMasteringCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_Mesh1P,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMasteringCharacter_Statics::NewProp_FirstPersonCameraComponent,
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeMasteringCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMasteringCharacter, 3516050072);
+	IMPLEMENT_CLASS(AMasteringCharacter, 541226578);
 	template<> MASTERING_API UClass* StaticClass<AMasteringCharacter>()
 	{
 		return AMasteringCharacter::StaticClass();

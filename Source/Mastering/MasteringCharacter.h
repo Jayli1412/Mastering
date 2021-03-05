@@ -56,10 +56,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint8 bUsingMotionControllers : 1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	class UMasteringInventory *Inventory;
-
-
+	
 
 
 protected:
@@ -78,6 +75,10 @@ protected:
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
 	 */
 	void TurnAtRate(float Rate);
+
+	void SelectNextWeapon();
+
+	void SelectPreviousWeapon();
 
 	/**
 	 * Called via input to turn look up/down at a given rate.
@@ -100,6 +101,8 @@ protected:
 
 	class AMasteringWeapon* EquippedWeaponActor;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	class UMasteringInventory* Inventory;
 	
 protected:
 	// APawn interface
@@ -126,5 +129,6 @@ public:
 	//Load equipped weapon 
 	FORCEINLINE class AMasteringWeapon* GetEquippedWeapon() const { return EquippedWeaponActor; };
 
+	FORCEINLINE class UMasteringInventory* GetInventory() const { return Inventory; }
 };
 

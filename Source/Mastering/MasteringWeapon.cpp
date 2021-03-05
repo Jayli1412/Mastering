@@ -3,6 +3,7 @@
 
 #include "MasteringWeapon.h"
 #include "MasteringProjectile.h"
+#include "MasteringInventory.h"
 #include "Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
 #include "Runtime/Engine/Classes/Animation/AnimInstance.h"
 #include "Kismet/GameplayStatics.h"
@@ -36,7 +37,7 @@ void AMasteringWeapon::Tick(float DeltaTime)
 
 }
 
-void AMasteringWeapon::Fire(FRotator ControlRotation, class UAnimInstance* AnimInst)
+void AMasteringWeapon::Fire(FRotator ControlRotation, class UAnimInstance* AnimInst, class UMasteringInventory* Inventory)
 {
 	//Check Projectile
 	if (ProjectileClass != nullptr)
@@ -66,4 +67,6 @@ void AMasteringWeapon::Fire(FRotator ControlRotation, class UAnimInstance* AnimI
 			AnimInst->Montage_Play(FireAnimation, 1.f);
 		}
 	}
+	// 탄약의 수 하나 감소
+	Inventory->ChangeAmmo(GetClass(), -1);
 }

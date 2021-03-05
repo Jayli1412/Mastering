@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AStealthCharacter, 412692614);
+	IMPLEMENT_CLASS(AStealthCharacter, 3934846115);
 	template<> MASTERING_API UClass* StaticClass<AStealthCharacter>()
 	{
 		return AStealthCharacter::StaticClass();

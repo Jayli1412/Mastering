@@ -62,7 +62,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMasteringCharacter); \
 	FORCEINLINE static uint32 __PPO__Mesh1P() { return STRUCT_OFFSET(AMasteringCharacter, Mesh1P); } \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AMasteringCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__R_MotionController() { return STRUCT_OFFSET(AMasteringCharacter, R_MotionController); } \
-	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(AMasteringCharacter, L_MotionController); }
+	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(AMasteringCharacter, L_MotionController); } \
+	FORCEINLINE static uint32 __PPO__Inventory() { return STRUCT_OFFSET(AMasteringCharacter, Inventory); }
 
 
 #define Mastering_Source_Mastering_MasteringCharacter_h_18_PROLOG

@@ -39,6 +39,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 		class USkeletalMeshComponent* WeaponMesh;
 
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -49,6 +50,5 @@ public:
 
 public:
 	// Fire Weapon
-	void Fire(FRotator ControlRotation, class UAnimInstance* AnimInst);
-
+	void Fire(FRotator ControlRotation, class UAnimInstance* AnimInst, class UMasteringInventory* Inventory);
 };
