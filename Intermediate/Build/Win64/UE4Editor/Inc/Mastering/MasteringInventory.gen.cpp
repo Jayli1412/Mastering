@@ -13,13 +13,118 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMasteringInventory() {}
 // Cross Module References
-	MASTERING_API UClass* Z_Construct_UClass_UMasteringInventory_NoRegister();
-	MASTERING_API UClass* Z_Construct_UClass_UMasteringInventory();
-	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
+	MASTERING_API UScriptStruct* Z_Construct_UScriptStruct_FWeaponProperties();
 	UPackage* Z_Construct_UPackage__Script_Mastering();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	MASTERING_API UClass* Z_Construct_UClass_AMasteringWeapon_NoRegister();
+	MASTERING_API UClass* Z_Construct_UClass_UMasteringInventory_NoRegister();
+	MASTERING_API UClass* Z_Construct_UClass_UMasteringInventory();
+	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 // End Cross Module References
+class UScriptStruct* FWeaponProperties::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern MASTERING_API uint32 Get_Z_Construct_UScriptStruct_FWeaponProperties_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FWeaponProperties, Z_Construct_UPackage__Script_Mastering(), TEXT("WeaponProperties"), sizeof(FWeaponProperties), Get_Z_Construct_UScriptStruct_FWeaponProperties_Hash());
+	}
+	return Singleton;
+}
+template<> MASTERING_API UScriptStruct* StaticStruct<FWeaponProperties>()
+{
+	return FWeaponProperties::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FWeaponProperties(FWeaponProperties::StaticStruct, TEXT("/Script/Mastering"), TEXT("WeaponProperties"), false, nullptr, nullptr);
+static struct FScriptStruct_Mastering_StaticRegisterNativesFWeaponProperties
+{
+	FScriptStruct_Mastering_StaticRegisterNativesFWeaponProperties()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("WeaponProperties")),new UScriptStruct::TCppStructOps<FWeaponProperties>);
+	}
+} ScriptStruct_Mastering_StaticRegisterNativesFWeaponProperties;
+	struct Z_Construct_UScriptStruct_FWeaponProperties_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_WeaponClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponPower_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_WeaponPower;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Ammo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Ammo;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponProperties_Statics::Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MasteringInventory.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FWeaponProperties>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponClass_MetaData[] = {
+		{ "ModuleRelativePath", "MasteringInventory.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponClass = { "WeaponClass", nullptr, (EPropertyFlags)0x0014000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponProperties, WeaponClass), Z_Construct_UClass_AMasteringWeapon_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponPower_MetaData[] = {
+		{ "ModuleRelativePath", "MasteringInventory.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponPower = { "WeaponPower", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponProperties, WeaponPower), METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponPower_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponPower_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_Ammo_MetaData[] = {
+		{ "ModuleRelativePath", "MasteringInventory.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_Ammo = { "Ammo", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponProperties, Ammo), METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_Ammo_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_Ammo_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FWeaponProperties_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_WeaponPower,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponProperties_Statics::NewProp_Ammo,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FWeaponProperties_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_Mastering,
+		nullptr,
+		&NewStructOps,
+		"WeaponProperties",
+		sizeof(FWeaponProperties),
+		alignof(FWeaponProperties),
+		Z_Construct_UScriptStruct_FWeaponProperties_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponProperties_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponProperties_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponProperties_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FWeaponProperties()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FWeaponProperties_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_Mastering();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("WeaponProperties"), sizeof(FWeaponProperties), Get_Z_Construct_UScriptStruct_FWeaponProperties_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FWeaponProperties_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FWeaponProperties_Hash() { return 2473693294U; }
 	void UMasteringInventory::StaticRegisterNativesUMasteringInventory()
 	{
 	}

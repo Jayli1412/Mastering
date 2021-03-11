@@ -6,7 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "MasteringInventory.generated.h"
 
-UStruct()
+USTRUCT()
 struct FWeaponProperties
 {
 	GENERATED_USTRUCT_BODY()
@@ -45,7 +45,7 @@ public:
 	void SelectWeapon(class AMasteringCharacter* Player, TSubclassOf<class AMasteringWeapon> Weapon);
 
 	// Add weapon to weapon list
-	void AddWeapon(TSubclassOf<class AMasteringWeapon> Weapon);
+	void AddWeapon(TSubclassOf<class AMasteringWeapon> Weapon,Ammo, WeaponPower);
 
 	// Add Default weapon
 	void AddDefaultWeapon();

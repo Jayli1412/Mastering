@@ -126,5 +126,6 @@ public:
 	//Load equipped weapon 
 	FORCEINLINE class AMasteringWeapon* GetEquippedWeapon() const { return EquippedWeaponActor; };
 
+	void GetInventory();
 };
 
